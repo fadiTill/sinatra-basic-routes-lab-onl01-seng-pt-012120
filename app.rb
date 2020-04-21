@@ -10,7 +10,7 @@ class App < Sinatra::Base
   # "My name is  #{n}!"
 end
 
- 
+
    get '/name' do
   @name = Name.all
 
@@ -18,6 +18,7 @@ end
 
 
  "My name is #{name}"
+end
 end
 
 
