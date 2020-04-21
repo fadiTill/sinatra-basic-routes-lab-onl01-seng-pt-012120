@@ -24,6 +24,7 @@ get '/name' do
 erb :'name/index.html.erb'
 "My name is #{name}"
 end
+end
 
 get '/hometown' do
 
