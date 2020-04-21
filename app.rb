@@ -8,7 +8,7 @@ class App < Sinatra::Base
   #  params['name'] is 'foo' or 'bar'
   #  n stores params['name']
   # "My name is  #{n}!"
-end
+
 
 
    get '/name' do
@@ -16,7 +16,6 @@ end
 
   erb :'name/index.html.erb'
  "My name is #{name}"
-end
 end
 
 
