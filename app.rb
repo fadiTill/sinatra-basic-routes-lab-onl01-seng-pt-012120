@@ -7,7 +7,7 @@ class App < Sinatra::Base
    matches "GET /hello/foo" and "GET /hello/bar"
    params['name'] is 'foo' or 'bar'
    n stores params['name']
-  "Hello #{n}!"
+  "My name is  #{n}!"
 end
 
 # get '/name/list/200' do
