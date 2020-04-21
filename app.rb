@@ -19,7 +19,7 @@ class App < Sinatra::Base
   #   end
 
 
-get '/name' do
+get '/name/list/200' do
 "My name is #{name}"
 end
 
