@@ -16,7 +16,7 @@ end
 
 
 get '/hometown' do
-"My hometown is #{hometown}"
+""
 
 end
 
