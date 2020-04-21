@@ -15,8 +15,6 @@ end
   @name = Name.all
 
   erb :'name/index.html.erb'
-
-
  "My name is #{name}"
 end
 end
