@@ -13,7 +13,7 @@ end
  get '/name' do
    erb
 
- name.each do |list|
+ 
  "My name is #{name}"
 end
 
