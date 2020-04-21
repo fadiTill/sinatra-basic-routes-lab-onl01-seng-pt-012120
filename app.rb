@@ -21,8 +21,8 @@ class App < Sinatra::Base
   def name
 get '/name' do
 @name = Name.all
-"My name is"
 erb :'name/index.html.erb'
+"My name is #{name}"
 end
 
 get '/hometown' do
