@@ -11,7 +11,7 @@ class App < Sinatra::Base
 end
 
  get '/name' do
-   get '/medicines' do
+   get '/name' do
   @name = Name.all
 
   erb :'name/index.html.erb'
