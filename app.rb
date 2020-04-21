@@ -10,11 +10,11 @@ class App < Sinatra::Base
   # "My name is  #{n}!"
 end
 
-# get '/name/list/200' do
-#
-# name.each do |list|
-# "My name is #{name}"
-# end
+ get '/name/ do
+
+ name.each do |list|
+ "My name is #{name}"
+end
 
 
 get '/hometown' do
