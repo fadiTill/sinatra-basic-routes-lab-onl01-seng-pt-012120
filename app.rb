@@ -10,7 +10,8 @@ class App < Sinatra::Base
   # "My name is  #{n}!"
 end
 
- get '/name do
+ get '/name' do
+   erb
 
  name.each do |list|
  "My name is #{name}"
