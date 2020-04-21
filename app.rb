@@ -8,11 +8,11 @@ class App < Sinatra::Base
   #     before(:each) do
   #       get '/name'
   #     end
-  # 
+  #
   #     it "returns a 200 status code" do
   #       expect(last_response.status).to eq(200)
   #     end
-  # 
+  #
   #     it "displays your name" do
   #       expect(last_response.body).to include("My name is ")
   #     end
