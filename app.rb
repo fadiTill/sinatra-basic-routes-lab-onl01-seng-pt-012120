@@ -18,7 +18,7 @@ class App < Sinatra::Base
   #     end
   #   end
 
-  def name
+def name
 get '/name' do
 "My name is #{name}"
 end
