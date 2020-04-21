@@ -8,16 +8,14 @@ class App < Sinatra::Base
   #  params['name'] is 'foo' or 'bar'
   #  n stores params['name']
   # "My name is  #{n}!"
+
+
+    get '/name' do
+  @name = Name.all
+
+  erb :'name/index.html.erb'
+  "My name is #{name}"
 end
-
-
-
-#    get '/name' do
-#   @name = Name.all
-#
-#   erb :'name/index.html.erb'
-#  "My name is #{name}"
-# end
 
 
 get '/hometown' do
