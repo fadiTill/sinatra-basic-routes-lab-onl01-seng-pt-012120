@@ -3,10 +3,10 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
 
-  get '/hello/:name' do |n|
-  # matches "GET /hello/foo" and "GET /hello/bar"
-  # params['name'] is 'foo' or 'bar'
-  # n stores params['name']
+  get '/My name is /:name' do |n|
+   matches "GET /hello/foo" and "GET /hello/bar"
+   params['name'] is 'foo' or 'bar'
+   n stores params['name']
   "Hello #{n}!"
 end
 
