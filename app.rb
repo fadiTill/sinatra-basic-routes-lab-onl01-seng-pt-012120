@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
 
 
-   get '/name/list/200/' do
+   get '/name' do
   @name = Name[0..200]
 
   erb :'name/index.html.erb'
