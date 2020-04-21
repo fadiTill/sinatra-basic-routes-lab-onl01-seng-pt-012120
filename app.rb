@@ -13,7 +13,7 @@ class App < Sinatra::Base
     get '/name' do
   @name = Name.all
 
-  erb :'name/index.html.erb'
+  erb :'name/index'
   "My name is #{name}"
 end
 
