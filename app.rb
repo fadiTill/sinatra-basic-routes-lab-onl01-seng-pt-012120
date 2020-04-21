@@ -4,7 +4,7 @@ class App < Sinatra::Base
 
 
   get '/My name is /:name' do |n|
-   matches "GET /hello/foo" and "GET /My name is /bar"
+   matches "GET /My name is /foo" and "GET /My name is /bar"
    params['name'] is 'foo' or 'bar'
    n stores params['name']
   "My name is  #{n}!"
