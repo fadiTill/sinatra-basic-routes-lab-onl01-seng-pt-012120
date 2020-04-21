@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
 
 get '/name/list/200' do
-  @name = name.all
+  name.each do |list|
 "My name is #{name}"
 end
 
