@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
   def name
 get '/name' do
-@name = Name.all
+@name = Name
 "My name is #{name}"
 end
 end
