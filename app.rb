@@ -3,27 +3,18 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
 
-  # describe "Basic Routes Lab" do
-  #   describe "GET '/name'" do
-  #     before(:each) do
-  #       get '/name'
-  #     end
-  #
-  #     it "returns a 200 status code" do
-  #       expect(last_response.status).to eq(200)
-  #     end
-  #
-  #     it "displays your name" do
-  #       expect(last_response.body).to include("My name is ")
-  #     end
-  #   end
-
-
-get '/name/list/200' do
-  
-name.each do |list|
-"My name is #{name}"
+  get '/hello/:name' do |n|
+  # matches "GET /hello/foo" and "GET /hello/bar"
+  # params['name'] is 'foo' or 'bar'
+  # n stores params['name']
+  "Hello #{n}!"
 end
+
+# get '/name/list/200' do
+#
+# name.each do |list|
+# "My name is #{name}"
+# end
 
 
 get '/hometown' do
